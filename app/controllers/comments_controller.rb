@@ -3,8 +3,8 @@
 # Comments Controller (example of top-level documentation comment)
 class CommentsController < ApplicationController
   # authentication for funtionality "Delete". Only Admin credentials can delete an object
-  http_basic_authenticate_with name: 'admin', password: '123456', only: :destroy
-
+  http_basic_authenticate_with name: 'admin', password: '098765', only: :destroy
+  http_basic_authenticate_with name: 'user', password: '123456', only: :destroy
   # Create Comments
   def create
     @car = Car.find(params[:car_id])

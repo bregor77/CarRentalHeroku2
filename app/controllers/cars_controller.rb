@@ -2,6 +2,7 @@
 
 # Cars Controller (example of top-level documentation comment)
 class CarsController < ApplicationController
+  # authentication for funtionality "Delete". Only Admin credentials can delete an object
   http_basic_authenticate_with name: 'admin', password: '123456', only: :destroy
 
   # before_action :authenticate_user!
