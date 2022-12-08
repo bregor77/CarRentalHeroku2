@@ -3,8 +3,8 @@
 # Services for API Weather
 class CurrentWeatherService
   BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
-  # API_KEY = "88105ba41fde03fe358f700f0ec1a680"  # better is use .env instead leave it as sensitive data
-  API_KEY = ENV['OPENWEATHER_API_KEY']
+  API_KEY = "88105ba41fde03fe358f700f0ec1a680"  # better is use .env instead leave it as sensitive data
+  # API_KEY = ENV['OPENWEATHER_API_KEY']
 
   def initialize(latitude:, longitude:, units:)
     @latitude = latitude
